@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Harmony Honey Monroe - Games, Art, HHoney Software</title>
+  <link rel="icon" href="content/art/icon.svg" sizes="any" type="image/svg+xml">
+  <meta property="og:image" content="content/logo/hhoney_software800.png">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Avoid Caching -->
+  <meta http-equiv=“Pragma” content=”no-cache”>
+  <meta http-equiv=“Expires” content=”-1″>
+  <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+  <style>
+  
+    @import "../bootstrap-5.1.3-dist/node_modules/rfs/scss";
+  
+  
+    /* INDEX STYLE */
+    
+    @font-face {
+      font-family: Alexandria;
+      src: url(content/font/alexandria-latin-700-normal.woff2) format("woff2");
+    }
+
+    .alex{
+      font-family: Alexandria;
+    }
+    
+
+    .pic{
+        width: clamp(25px, 23vw, 250px);
+        border-radius: 50%;
+    }
+  
+    /* ART STYLE */
+  
+    /* Container for each block in the Grid Container */
+    .divblock{
+      padding:100% 0 0 0;
+      position:relative;
+    }
+  
+    /* Container for Media within divblock */
+    .contentblock{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border-radius:2.5%;
+      background-color: #777;
+    }
+  
+    /* Column within Grid Container Row */
+    .col-lg{
+      padding: 1%;
+    }
+  
+  
+    /* NAV STYLE */
+  
+  
+    .navbar{
+      background-color: #fff;
+      padding: 0px 0;
+      margin: 0px 0px;
+    }
+  
+    .navbar a{
+      color: #000;
+    }
+  
+    .navbar a:hover{
+      color: red;
+    }
+  
+    .navbar-brand{
+      font-size: clamp(1.5rem, 3.5vw, 3rem);
+      margin-left: 1vw;
+    }
+  
+    .nav-link{
+      font-size: clamp(0.7rem, 1.5vw, 3rem);
+      text-align: center;
+      margin-right: 0.5vw;
+    }
+
+    .nlink{
+      display: contents;
+    }
+  
+    .nimage{
+      margin-top: 0px;
+      max-width: 200%;
+      height: clamp(28px, 5.3vw, 80px);
+    }
+    .nimage:hover{
+      filter: invert();
+    }
+  
+    /* INDEX STYLE */
+  
+    body{
+      background-color: #333;
+      background-image: linear-gradient(#0062ff, #00eaff);
+      background-attachment: fixed;
+      font-family: Alexandria;
+    }
+  
+    a{
+      color: #fff;
+      text-decoration: solid;
+    }
+  
+    a:hover{
+      color: #fff;
+    }
+  
+    .desc{
+      color: #fff;
+      text-align: center;
+      font-size: min(2.7vw, 22pt);
+    }
+  
+    .desc2{
+      color: #fff;
+      text-align: center;
+      font-size: min(3.5vw, 50pt);
+    }
+  
+    .desc3{
+      color: #fff;
+      text-align: center;
+      font-size: min(2.5vw, 50pt);
+    }
+  
+    .tainer{
+      max-width: 1080px;
+    }
+  
+    .logo{
+      background-image: linear-gradient(#595959, #000);
+      background-clip: padding-box;
+      padding: 5%;
+    }
+  
+    .itch{
+      background-image: linear-gradient(#fa5c5c, #e33);
+    }
+  
+    .button{
+      border-style: solid;
+      border-width: min(1vw, 15px);
+      border-radius: min(4.2vw, 50px);
+      border-color: transparent;
+    }
+  
+    .button:hover{
+      border-color: #fff;
+    }
+  
+    .bell:active{
+      filter: invert();
+    }
+
+    .nobell:active{
+      filter: invert();
+    }
+  
+    .vid{
+      border-radius: min(4.2vw, 40px);
+    }
+  
+    .foot{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.5rem, 6vw, 4rem);
+    }
+
+    .foot2{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.22rem, 3.5vw, 2.2rem);
+    }
+
+    .foot-md{
+      font-size: clamp(0.38rem, 5.5vw, 4rem);
+    }
+
+    .foot-sm{
+      font-size: clamp(0.3rem, 5vw, 3rem);
+    }
+  
+    .rota{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.5rem, 4vw, 3rem);
+    }
+  
+    .tinycrate{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.5rem, 3.2vw, 2.5rem);
+    }
+  
+    .title0{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(1rem, 16vw, 9rem);
+      line-height: 120%;
+    }
+
+    .title{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.5rem, 12vw, 6rem);
+    }
+    
+    .title2{
+      color: #fff;
+      text-align: center;
+      font-size: clamp(0.3rem, 7vw, 4rem);
+    }
+
+  
+
+  
+  </style>
+
+</head>
+
+<body>
+  
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+    
+      <a class="navbar-brand abs" href="#">HARMONY MONROE</a>
+
+      <button class="navbar-toggler ms-auto navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#cnav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="cnav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://github.com/harmonyhoney" target="_blank"><i class="fab fa-github"></i><div class="nlink"> GitHub</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://discord.gg/qGKzEykNyA" target="_blank"><i class="fab fa-discord"></i><div class="nlink"> Discord</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://www.youtube.com/@harmonymonroe7" target="_blank"><i class="fab fa-youtube"></i><div class="nlink"> YouTube</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://bsky.app/profile/hhoneysoftware.bsky.social" target="_blank"><i class="fab fa-bluesky"></i><div class="nlink"> Bluesky</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://hhoneysoftware.itch.io" target="_blank"><i class="fab fa-itch-io"></i><div class="nlink"> itch.io</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://store.steampowered.com/app/1993830/ROTA_Open_Source_Fork/" target="_blank"><i class="fab fa-steam"></i><div class="nlink"> Steam</div></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link bell" href="https://www.patreon.com/hhoney" target="_blank"><i class="fab fa-patreon"></i><div class="nlink"> Patreon</div></a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div> 
+  </nav>
+
+  <main>
+
+  <!-- GAMES -->
+  <div class="tainer container">
+
+    <div class="row row-cols-1 gx-0 gy-0" style="margin: 10px 0 0 0;">
+        <div class="col mx-auto title0 nobell" style="padding: 1%">HARMONY<br>MONROE</div>
+    </div>
+
+    <div class="row row-cols-2 gx-5% gy-0" style="margin: 0 0 0 0">
+        <a href="https://hhoneysoftware.itch.io/rota" target="_blank" class="col mx-auto bell foot"> <img src="content/game/rota.png" class="button img-fluid w-100"><br>ROTA</a>
+        <br>
+        <a href="https://hhoneysoftware.itch.io/tinycrate" target="_blank" class="col mx-auto bell foot"> <img src="content/game/tiny-crate.gif" class="button img-fluid w-100"><br>TINY CRATE</a>
+        <a href="https://hhoneysoftware.itch.io/wrap-it-up" target="_blank" class="col mx-auto bell foot"> <img src="content/game/wrap-it-up.png" class="button img-fluid w-100"><br>WRAP IT UP</a>
+    </div>
+
+    <div class="row row-cols-3 gx-5% gy-0" style="margin: 0 0 0 0">
+        <a href="https://hhoneysoftware.itch.io/candy" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/candy.png" class="button img-fluid w-100"><br>Candy Wrapper</a>
+        <a href="https://hhoneysoftware.itch.io/launch-day" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/launch-day.gif" class="button img-fluid w-100"><br>Launch Day</a>
+        <a href="https://hhoneysoftware.itch.io/golf" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/gravity-golf.gif" class="button img-fluid w-100"><br>Gravity Golf</a>
+        <a href="https://hhoneysoftware.itch.io/skate-chat" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/skate-chat.png" class="button img-fluid w-100"><br>Skate Chat</a>
+        <a href="https://hhoneysoftware.itch.io/yokai-king" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/yokai-king.gif" class="button img-fluid w-100"><br>Yokai King</a>
+        <a href="https://hhoneysoftware.itch.io/jet-boy" target="_blank" class="col mx-auto bell foot2"> <img src="content/game/jet-boy.gif" class="button img-fluid w-100"><br>Jet Boy</a>
+    </div>
+
+
+  </div>
+
+  <!-- ABOUT and VIDEO -->
+  <div id="footy" class="tainer container">
+
+    <div class="tainer container">
+
+      <div class="row row-cols-1 gx-0 gy-0" style="margin: 50px 0px 0px 0px">
+
+        <div class="row row-cols-2 gx-0 gy-0 bell" style="margin: 0 0 20px 0;">
+          <div class="foot col mx-auto my-auto"> <a href="https://github.com/HarmonyHoney/" target="_blank" class="foot"> <img class="pic" src="content/logo/skate.png"> </a> </div>
+          <div class="foot col mx-auto my-auto text-start">Harmony Honey<br>Monroe</div>
+        </div>
+
+        <div class="foot col mx-auto"><i class="fa-solid fa-pencil"></i> Artist</div>
+        <div class="foot col mx-auto"><i class="fas fa-gamepad"></i> Game Developer <i class="fa-solid fa-hammer"></i></div>
+        <div class="foot col mx-auto">Baltimore, Maryland <i class="fas fa-flag-usa"></i> USA</div>
+        <a class="foot foot-sm col mx-auto button bell" href="mailto:harmonymonroe@proton.me"><i class="fas fa-envelope"></i> harmonymonroe@proton.me <i class="fa-solid fa-paper-plane"></i></a>
+        
+        <a class="foot button col mx-auto bell" style="margin: 60px 0 30px 0;" href="https://www.youtube.com/@harmonymonroe7" target="_none"> <i class="fa-solid fa-eye"></i> Watch on YouTube! <i class="fab fa-youtube "></i> </a>
+        <div class="col ratio ratio-16x9 gx-0 gy-0" style="margin: 0 0 0 0"> <iframe class="vid" src="https://www.youtube.com/embed/0zj5jGAFZB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+      </div>
+
+    </div>
+
+    <div class="row" style="margin: 20px 0 20px 0">
+      <a href="https://hhoneysoftware.itch.io/" target="_blank" class="foot col bell"> <i class="fas fa-gamepad"></i> Play more games! <i class="fas fa-hand-point-down"></i> </a>
+    </div>
+
+
+    <div class="row row-cols-2 gx-3% gy-0" style="margin: 0 0 0 0">
+        <a href="https://store.steampowered.com/app/1993830/ROTA_Open_Source_Fork/" class="col mx-auto bell" target="_blank"> <img src="content/logo/steam.svg" class="button logo img-fluid"> </a>
+        <a href="https://hhoneysoftware.itch.io/" class="col mx-auto bell" target="_blank"> <img src="content/logo/itch.svg" class="button logo itch img-fluid"> </a>
+    </div>
+
+    <div class="row" style="margin: 30px 0">
+        <a href="https://github.com/HarmonyHoney/" target="_blank" class="foot button col bell"> <i class="fas fa-code"></i> Open Source on GitHub <i class="fas fa-code-fork"></i> </a>
+    </div>
+
+    <div class="row" style="margin: 0px 0 0px 0">
+        <a href="https://discord.gg/qGKzEykNyA" target="_blank" class="foot button col bell"> <i class="fa-solid fa-comment-dots"></i> Join our Discord <i class="fab fa-discord"></i> </a>
+    </div>
+  
+  </div>
+
+  <!-- ART -->
+
+  <div style="margin: 0 0 0px 0;"> <div class="container" > <div class="row">
+
+    <div class="title col-md" style="margin: 50px 0;"> <i class="fas fa-paintbrush"></i> Art <i class="fa-solid fa-palette"></i> </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- dive -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/583042079?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#ffa04d;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- ramp -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/580178811?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#008751;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- pool -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/580868018?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#8B8AB2;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- lakeside campsite -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315805989?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- biplane -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/383337456?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- robo run -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/316297086?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- lil planet -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315954603?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    
+    <!-- ocean house -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315943826?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    
+    <div class="w-100"></div>
+    
+    <!-- run n gun guy -->
+    <div class="col-lg">
+      <div class="divblock"><img src="content/art/runngun.svg" class="contentblock"/></div>
+    </div>
+    
+    <!-- hld fan art -->
+    <div class="col-lg">
+      <div class="divblock"><img src="content/art/hld-fanart-square.svg" class="contentblock"/></div>
+    </div>
+  
+    <!-- CRT-->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/383344608?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#1a1a1a;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+  </div> </div> <!-- End Inner Container --> </div>
+
+
+  <!-- LINKS -->
+
+  <div class="container" style="margin-top: 20px; margin-bottom: 80px;">
+
+    <div class="row row-cols-3">
+      <a href="https://github.com/HarmonyHoney/" target="_blank" class="foot foot-md button col bell"><i class="fab fa-github"></i><br>GitHub</a>
+      <a href="https://discord.gg/qGKzEykNyA" target="_blank" class="foot foot-md button col bell"><i class="fab fa-discord"></i><br>Discord</a>
+      <a href="https://www.youtube.com/@harmonymonroe7" target="_blank" class="foot foot-md button col bell"><i class="fab fa-youtube"></i><br>YouTube</a>
+      <a href="https://bsky.app/profile/hhoneysoftware.bsky.social" target="_blank" class="foot foot-md button col bell"><i class="fab fa-bluesky"></i><br>Bluesky</a>
+      <a href="https://hhoneysoftware.itch.io" target="_blank" class="foot foot-md button col bell"><i class="fab fa-itch-io"></i><br>itch.io</a>
+      <a href="https://store.steampowered.com/app/1993830/ROTA_Open_Source_Fork/" target="_blank" class="foot foot-md button col bell"><i class="fab fa-steam"></i><br>Steam</a>
+      <a href="https://www.patreon.com/hhoney" target="_blank" class="foot foot-md button col bell"><i class="fab fa-patreon"></i><br>Patreon</a>
+    </div>
+  </div>
+
+  </main>
+
+  <!-- JS Include JQuery, Popper JS, Bootstrap, FontAwesome -->
+  <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="js/popper-1.14.7.min.js"></script>
+  <script type="text/javascript" src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/5fb31601b8.js" crossorigin="anonymous"></script>
+  
+  <!-- MY SCRIPTS -->
+  <script>
+    function bell(){
+        var audio = new Audio("content/sfx/bell.ogg");
+        audio.play();
+    };
+
+    function set_bell(){
+      $(".bell").click(function() {bell();} );
+    };
+
+  </script>
+
+
+  <script>set_bell()</script>
+  
+</body>
+
+</html>

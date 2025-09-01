@@ -1,0 +1,8 @@
+# Candy Wrapper (net.hhoney.candy)
+c04b55dc-b032-4666-9f37-040953be2abd
+
+# ROTA (net.hhoney.rota)
+ccb9847a-af28-409b-b03c-adb229e680ce
+
+# Tiny Crate (net.hhoney.tinycrate)
+2d9e62d2-b375-4fa5-be72-b655386156d6
